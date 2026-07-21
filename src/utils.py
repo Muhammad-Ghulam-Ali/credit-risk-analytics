@@ -18,3 +18,8 @@ def outlier_detection(df, column_name):
 def skewness_test(df, column_name):
     skewness = float(df[column_name].skew().round(2))
     return skewness
+
+# Kurtosis test
+def kurtosis_test(df, column_name):
+    kurtosis = df[column_name].kurtosis().round(2)
+    return kurtosis
